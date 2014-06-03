@@ -5,6 +5,15 @@
     <title>Delivr.li</title>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/fontawesome/4.1.0/css/font-awesome.css">
+    <style type="text/css">
+        .header {
+            margin-bottom: 20px;
+        }
+
+        .loading p{
+            padding: 15px;
+        }
+    </style>
 </head>
 <body>
     <a href="https://github.com/cranic/node-delivrli">
@@ -12,13 +21,13 @@
     </a>
     <div class="container" ng-controller="MainCtrl">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 header">
                 <h1>Delivr.li</h1>
                 <p>Create, modify and share urls containing all the libraries that you need for your project, delivered by <a href="http://www.jsdelivr.com/">jsDelivr</a> CDN.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 loading">
                 <p class="bg-info"><span class="glyphicon glyphicon-refresh fa-spin"></span> Loading libraries, please wait...</p>
             </div>
         </div>
