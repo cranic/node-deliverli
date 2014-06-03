@@ -5,7 +5,11 @@
     <title>Delivr.li</title>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.1.1/css/bootstrap.min.css">
     <style type="text/css">
-
+        .spin {
+            transform:rotate(360deg);
+            -ms-transform:rotate(360deg);
+            -webkit-transform:rotate(360deg);
+        }
     </style>
 </head>
 <body>
@@ -14,11 +18,18 @@
     </a>
     <div class="container" ng-controller="MainCtrl">
         <div class="row">
-            <h1>Delivr.li</h1>
-            <p>Create, modify and share urls containing all the libraries that you need for your project, delivered by <a href="http://www.jsdelivr.com/">jsDelivr</a> CDN.</p>
+            <div class="col-md-12">
+                <h1>Delivr.li</h1>
+                <p>Create, modify and share urls containing all the libraries that you need for your project, delivered by <a href="http://www.jsdelivr.com/">jsDelivr</a> CDN.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p><span class="glyphicon glyphicon-refresh spin"></span> Loading libraries, please wait...</p>
+            </div>
         </div>
     </div>
-    <script src="//cdn.jsdelivr.net/g/jquery@2(jquery.min.js),bootstrap@3.1(/js/bootstrap.min.js),angularjs@1.2(angular.min.js+angular-route.min.js),angular.bootstrap@0.11(ui-bootstrap-tpls.min.js)"></script>
+    <script src="//cdn.jsdelivr.net/g/jquery@2(jquery.min.js),bootstrap@3.1(/js/bootstrap.min.js),angularjs@1.2(angular.min.js+angular-route.min.js),angular.bootstrap@0.11(ui-bootstrap-tpls.min.js),pouchdb@2.2"></script>
     <script src="public/js/app.js"></script>
 </body>
 </html>
