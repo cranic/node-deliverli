@@ -10,8 +10,12 @@
             margin-bottom: 20px;
         }
 
-        .loading p{
+        .loading p {
             padding: 15px;
+        }
+
+        .loadin p span {
+            margin-right: 15px;
         }
     </style>
 </head>
@@ -26,7 +30,7 @@
                 <p>Create, modify and share urls containing all the libraries that you need for your project, delivered by <a href="http://www.jsdelivr.com/">jsDelivr</a> CDN.</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row" ng-hide="libraries.length">
             <div class="col-md-12 loading">
                 <p class="bg-info"><span class="glyphicon glyphicon-refresh fa-spin"></span> Loading libraries, please wait...</p>
             </div>
